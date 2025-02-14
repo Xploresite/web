@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplore - Privacy Policy & Terms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #00e5ff;
+            --secondary-color: #00b8d4;
+            --background-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-color: #e0e0e0;
+            --border-radius: 12px;
+            --section-bg: #252525;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: var(--surface-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-radius: var(--border-radius);
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #000;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            margin: -20px -20px 30px -20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: var(--section-bg);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #888;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #888;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
+            background: var(--surface-color);
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            margin: 40px -20px -20px -20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .header {
+                padding: 30px 0;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        .section h2:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Xplore</h1>
+            <p>Privacy Policy & Terms of Service</p>
+        </div>
+
+        <div class="section">
+            <h2>Privacy Policy</h2>
+            <p class="last-updated">Last Updated: January 3, 2025</p>
+            <p>This privacy policy explains how Xplore collects, uses, and protects your information.</p>
+            <h3>1. Information We Collect</h3>
+            <p>We collect the following information:</p>
+            <ul>
+                <li>Personal identification information (Dipak Kumar Das)</li>
+                <li>Usage data (how you use the app)</li>
+            </ul>
+
+            <h3>2. How We Use Your Information</h3>
+            <p>We use your information to:</p>
+            <ul>
+                <li>Provide, operate, and maintain our app</li>
+                <li>Improve, personalize, and expand our app</li>
+                <li>Understand and analyze how you use our app</li>
+                <li>Communicate with you, either directly or through one of our partners</li>
+            </ul>
+
+            <h3>3. How We Protect Your Information</h3>
+            <p>We implement a variety of security measures to maintain the safety of your personal information.</p>
+        </div>
+
+        <div class="section">
+            <h2>Terms and Conditions</h2>
+            <p class="last-updated">Last Updated: January 3, 2025</p>
+            
+            <h3>1. Google Drive API Integration</h3>
+            <p>This application uses Google Drive API to provide cloud storage functionality. By using this feature:</p>
+            <ul>
+                <li>You authorize the app to access your Google Drive account</li>
+                <li>We only access files created by our app</li>
+                <li>We don't store your Google credentials</li>
+                <li>You can revoke access at any time through your Google Account settings</li>
+            </ul>
+
+            <h3>2. Google Docs API Integration</h3>
+            <p>Our application integrates with Google Docs API to provide document editing capabilities:</p>
+            <ul>
+                <li>Document access is limited to files created within the app</li>
+                <li>Your documents remain your property</li>
+                <li>We don't share your documents with third parties</li>
+                <li>Access can be revoked through Google Account settings</li>
+            </ul>
+
+            <h3>3. Data Usage</h3>
+            <p>We collect minimal data necessary for app functionality:</p>
+            <ul>
+                <li>Basic user profile information</li>
+                <li>App-specific file metadata</li>
+                <li>Usage analytics for app improvement</li>
+            </ul>
+
+            <h3>4. Security</h3>
+            <p>We implement industry-standard security measures:</p>
+            <ul>
+                <li>Secure OAuth 2.0 authentication</li>
+                <li>Encrypted data transmission</li>
+                <li>Regular security audits</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Xplore. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
