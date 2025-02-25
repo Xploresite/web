@@ -80,6 +80,31 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
+    .donate-button {
+      display: inline-block;
+      background: #ffffff;
+      color: #000000;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .donate-button:hover {
+      background: #f0f0f0;
+      color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .donate-button:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
     .last-updated {
       font-style: italic;
       color: #888;
@@ -93,7 +118,7 @@
     }
 
     ul li {
-      margin-bottom: 1em; /* Clear separation between list items */
+      margin-bottom: 12px;
       padding-left: 24px;
       position: relative;
     }
@@ -173,179 +198,143 @@
   </style>
 </head>
 <body>
-  <div class="section">
-    <h2>Privacy Policy</h2>
-    <p class="last-updated">Last Updated: January 3, 2025</p>
-    <p>This privacy policy explains how Xplore collects, uses, and protects your information.</p>
+  <div class="container">
+    <div class="header">
+      <h1>Xplore</h1>
+      <p>Privacy Policy & Terms of Service</p>
+    </div>
 
-    <h3>1. Information We Collect</h3>
-    <p>We collect the following information:</p>
-    <ul>
-      <li>
-        Personal identification information
-        <br><em>(Note: We do not track any usage data regarding how users interact with the app.)</em>
-      </li>
-    </ul>
+    <div class="section">
+      <h2>Privacy Policy</h2>
+      <p class="last-updated">Last Updated: January 3, 2025</p>
+      <p>This privacy policy explains how Xplore collects, uses, and protects your information.</p>
+      <h3>1. Information We Collect</h3>
+      <p>We collect the following information:</p>
+      <ul>
+        <li>Personal identification information</li>
+        <p><em>(Note: We do not track any usage data regarding how users interact with the app.)</em></p>
+      </ul>
 
-    <h3>2. How We Use Your Information</h3>
-    <p>We use your information to:</p>
-    <ul>
-      <li>Provide, operate, and maintain our app</li>
-      <li>Improve, personalize, and expand our app</li>
-      <li>Communicate with you, either directly or through one of our partners</li>
-    </ul>
+      <h3>2. How We Use Your Information</h3>
+      <p>We use your information to:</p>
+      <ul>
+        <li>Provide, operate, and maintain our app</li>
+        <li>Improve, personalize, and expand our app</li>
+        <li>Communicate with you, either directly or through one of our partners</li>
+      </ul>
 
-    <h3>3. How We Protect Your Information</h3>
-    <p>We implement a variety of security measures to maintain the safety of your personal information.</p>
-  </div>
+      <h3>3. How We Protect Your Information</h3>
+      <p>We implement a variety of security measures to maintain the safety of your personal information.</p>
+    </div>
 
-  <div class="section">
-    <h2>Terms and Conditions</h2>
-    <p class="last-updated">Last Updated: January 3, 2025</p>
+    <div class="section">
+      <h2>Terms and Conditions</h2>
+      <p class="last-updated">Last Updated: January 3, 2025</p>
 
-    <h3>1. Overview of Services</h3>
-    <p>
-      Xplore is a multi-utility mobile application that offers various features, including:
-    </p>
-    <ul>
-      <li>
-        <strong>QR Code Scanning:</strong> The app uses your device's camera to scan QR codes for accessing certain features.
-      </li>
-      <li>
-        <strong>Google Account Integration:</strong> The app allows users to sign in using their Google account for a seamless experience.
-      </li>
-      <li>
-        <strong>Cloud File Storage:</strong> The app integrates with Google Drive to provide secure cloud storage for your files.
-      </li>
-      <li>
-        <strong>Messaging:</strong> Xplore supports email-based chat. Messages—including the content sent by the user and the time they were sent—are stored on our servers for up to 24 hours.
-      </li>
-      <li>
-        <strong>WikiXplore:</strong> Access Wikipedia content directly within the app for quick research and information.
-      </li>
-    </ul>
+      <h3>1. Overview of Services</h3>
+      <p>Xplore is a multi-utility mobile application that offers various features, including:</p>
+      <ul>
+        <li><strong>QR Code Scanning:</strong> The app uses your device's camera to scan QR codes for accessing certain features.</li>
+        <li><strong>Google Account Integration:</strong> The app allows users to sign in using their Google account for a seamless experience.</li>
+        <li><strong>Cloud File Storage:</strong> The app integrates with Google Drive to provide secure cloud storage for your files.</li>
+        <li><strong>Messaging:</strong> Xplore supports email-based chat. Messages—including the content sent by the user and the time they were sent—are stored on our servers for up to 24 hours.</li>
+        <li><strong>WikiXplore:</strong> Access Wikipedia content directly within the app for quick research and information.</li>
+      </ul>
 
-    <h3>2. Permissions Required</h3>
-    <p>
-      To deliver its core functionality, Xplore requests access to the following permissions on your mobile device:
-    </p>
-    <ul>
-      <li>
-        <strong>Camera Access:</strong> Xplore uses the camera to scan QR codes. This feature is only active when you use the QR code scanning function.
-      </li>
-      <li>
-        <strong>Google Account Access:</strong> Xplore integrates with Google Sign-In to facilitate login. We use your Google account to authenticate your identity, access your username, and integrate cloud file storage through Google Drive.
-      </li>
-      <li>
-        <strong>Internet Access:</strong> Required for accessing Wikipedia content through WikiXplore and other online features.
-      </li>
-    </ul>
+      <h3>2. Permissions Required</h3>
+      <p>To deliver its core functionality, Xplore requests access to the following permissions on your mobile device:</p>
+      <ul>
+        <li><strong>Camera Access:</strong> Xplore uses the camera to scan QR codes. This feature is only active when you use the QR code scanning function.</li>
+        <li><strong>Google Account Access:</strong> Xplore integrates with Google Sign-In to facilitate login. We use your Google account to authenticate your identity, access your username, and integrate cloud file storage through Google Drive.</li>
+        <li><strong>Internet Access:</strong> Required for accessing Wikipedia content through WikiXplore and other online features.</li>
+      </ul>
 
-    <h3>3. Data Collection and Usage</h3>
-    <p>
-      Xplore takes your privacy seriously and aims to provide transparency in how we collect and use your data.
-    </p>
-    <ul>
-      <li>
-        <strong>Camera Data:</strong> The app only uses your camera to scan QR codes. No photos or videos are recorded or saved from your camera unless explicitly mentioned.
-      </li>
-      <li>
-        <strong>Google Account Information:</strong> Xplore collects the username associated with your Google account when you sign in. This information is used for identification within the app and to enhance your user experience. We do not store passwords or sensitive Google account information.
-      </li>
-      <li>
-        <strong>Messaging Data:</strong> Messages sent via the app, along with their timestamps, are stored on our servers for up to 24 hours from the time they are sent. After 24 hours, these messages are automatically deleted. If you explicitly uninstall the app, upon reinstallation, the app will fetch any messages that remain within the 24-hour window.
-      </li>
-      <li>
-        <strong>Wikipedia Content:</strong> Content accessed through WikiXplore is retrieved from Wikipedia and is subject to Wikipedia's terms of use and Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0).
-      </li>
-    </ul>
+      <h3>3. Data Collection and Usage</h3>
+      <p>Xplore takes your privacy seriously and aims to provide transparency in how we collect and use your data.</p>
+      <ul>
+        <li><strong>Camera Data:</strong> The app only uses your camera to scan QR codes. No photos or videos are recorded or saved from your camera unless explicitly mentioned.</li>
+        <li><strong>Google Account Information:</strong> Xplore collects the username associated with your Google account when you sign in. This information is used for identification within the app and to enhance your user experience. We do not store passwords or sensitive Google account information.</li>
+        <li><strong>Messaging Data:</strong> Messages sent via the app, along with their timestamps, are stored on our servers for up to 24 hours from the time they are sent. After 24 hours, these messages are automatically deleted. If you explicitly uninstall the app, upon reinstallation, the app will fetch any messages that remain within the 24-hour window.</li>
+        <li><strong>Wikipedia Content:</strong> Content accessed through WikiXplore is retrieved from Wikipedia and is subject to Wikipedia's terms of use and Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0).</li>
+      </ul>
 
-    <h3>4. User Responsibilities</h3>
-    <p>By using Xplore, you agree to:</p>
-    <ul>
-      <li>
-        Provide Accurate Information – ensuring the information you provide, such as your username, is accurate and up-to-date.
-      </li>
-      <li>
-        Grant Necessary Permissions – agreeing to grant the app the necessary permissions (camera and Google account access) to deliver its functionality.
-      </li>
-      <li>
-        Use Responsibly – using the app's services responsibly. Xplore is not liable for any misuse of its features.
-      </li>
-      <li>
-        Comply with Wikipedia's Terms – when using WikiXplore, comply with Wikipedia's terms of use and proper attribution requirements.
-      </li>
-    </ul>
+      <h3>4. User Responsibilities</h3>
+      <p>By using Xplore, you agree to:</p>
+      <ul>
+        <li>Provide Accurate Information – ensuring the information you provide, such as your username, is accurate and up-to-date.</li>
+        <li>Grant Necessary Permissions – agreeing to grant the app the necessary permissions (camera and Google account access) to deliver its functionality.</li>
+        <li>Use Responsibly – using the app's services responsibly. Xplore is not liable for any misuse of its features.</li>
+        <li>Comply with Wikipedia's Terms – when using WikiXplore, comply with Wikipedia's terms of use and proper attribution requirements.</li>
+      </ul>
 
-    <h3>5. Data Security</h3>
-    <p>
-      We take data security seriously and use industry-standard methods to protect your information. However, while we strive to protect your data, we cannot guarantee the absolute security of data shared over the internet or wireless networks.
-    </p>
+      <h3>5. Data Security</h3>
+      <p>
+        We take data security seriously and use industry-standard methods to protect your information. However, while we strive to protect your data, we cannot guarantee the absolute security of data shared over the internet or wireless networks.
+      </p>
 
-    <h3>6. Third-Party Services</h3>
-    <p>
-      Xplore integrates with third-party services such as Google Sign-In for user authentication, Google Drive for cloud file storage, and Wikipedia for content access through WikiXplore. When using these services, you agree to comply with the terms and conditions and privacy policies of the respective third-party providers.
-    </p>
+      <h3>6. Third-Party Services</h3>
+      <p>
+        Xplore integrates with third-party services such as Google Sign-In for user authentication, Google Drive for cloud file storage, and Wikipedia for content access through WikiXplore. When using these services, you agree to comply with the terms and conditions and privacy policies of the respective third-party providers.
+      </p>
 
-    <h3>7. Messaging Auto-Deletion</h3>
-    <p>
-      Messages sent by users, along with their timestamps, are stored on our servers for up to 24 hours from the time they are sent. After 24 hours, these messages are automatically deleted. In the event that you explicitly uninstall the app, upon reinstallation, the app will retrieve any messages that are still within the 24-hour retention period.
-    </p>
+      <h3>7. Messaging Auto-Deletion</h3>
+      <p>
+        Messages sent by users, along with their timestamps, are stored on our servers for up to 24 hours from the time they are sent. After 24 hours, these messages are automatically deleted. In the event that you explicitly uninstall the app, upon reinstallation, the app will retrieve any messages that are still within the 24-hour retention period.
+      </p>
 
-    <h3>8. Account Deletion</h3>
-    <p>
-      If you choose to delete your account, all personal user information stored on our servers will be permanently deleted. However, your cloud files stored via Google Drive will not be deleted, as they are managed by Google Drive and remain under your control.
-    </p>
-    <p>
-      You can delete your account and associated data at any time by following these steps:
-    </p>
-    <ol>
-      <li>Open the Xplore app</li>
-      <li>Navigate to the "Account Overview" section</li>
-      <li>Tap on the "Delete Account" option</li>
-      <li>Confirm your decision when prompted</li>
-    </ol>
-    <p>
-      Once confirmed, all your personal information and data stored on our servers will be permanently removed. If you experience any issues with account deletion, please contact us at <a href="mailto:wecare@xplore.sbs">wecare@xplore.sbs</a>.
-    </p>
+      <h3>8. Account Deletion</h3>
+<p>
+  If you choose to delete your account, all personal user information stored on our servers will be permanently deleted. However, your cloud files stored via Google Drive will not be deleted, as they are managed by Google Drive and remain under your control.
+</p>
+<p>
+  You can delete your account and associated data at any time by following these steps:
+</p>
+<ol>
+  <li>Open the Xplore app</li>
+  <li>Navigate to "Account Overview" section</li>
+  <li>Tap on the "Delete Account" option</li>
+  <li>Confirm your decision when prompted</li>
+</ol>
+<p>
+  Once confirmed, all your personal information and data stored on our servers will be permanently removed. If you experience any issues with account deletion, please contact us at <a href="mailto:wecare@xplore.sbs">wecare@xplore.sbs</a>.
+</p>
+      </ul>
 
-    <h3>9. Wikipedia Content Usage</h3>
-    <p>
-      Content accessed through WikiXplore is sourced from Wikipedia and is protected under the Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0). This content:
-    </p>
-    <ul>
-      <li>May be subject to additional terms of use as specified by the Wikimedia Foundation</li>
-      <li>Must be attributed to Wikipedia when shared or redistributed</li>
-      <li>May be updated or modified on Wikipedia, and such changes will be reflected in WikiXplore</li>
-      <li>Is provided "as is" without any guarantees of accuracy or completeness</li>
-    </ul>
+      <h3>9. Wikipedia Content Usage</h3>
+      <p>
+        Content accessed through WikiXplore is sourced from Wikipedia and is protected under the Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0). This content:
+      </p>
+      <ul>
+        <li>May be subject to additional terms of use as specified by the Wikimedia Foundation</li>
+        <li>Must be attributed to Wikipedia when shared or redistributed</li>
+        <li>May be updated or modified on Wikipedia, and such changes will be reflected in WikiXplore</li>
+        <li>Is provided "as is" without any guarantees of accuracy or completeness</li>
+      </ul>
 
-    <h3>10. Updates and Changes</h3>
-    <p>
-      We may update these Terms and Conditions periodically to reflect changes in the app's functionality or for legal reasons. We will notify you of any changes within the app. Continued use of the app after such changes means you accept the updated terms.
-    </p>
+      <h3>10. Updates and Changes</h3>
+      <p>
+        We may update these Terms and Conditions periodically to reflect changes in the app's functionality or for legal reasons. We will notify you of any changes within the app. Continued use of the app after such changes means you accept the updated terms.
+      </p>
 
-    <h3>11. Contact Us</h3>
-    <p>
-      If you have any questions or concerns about these Terms and Conditions, please contact us at:
-    </p>
-    <ul>
-      <li>
-        Email: <a href="mailto:wecare@xplore.sbs">wecare@xplore.sbs</a>
-      </li>
-    </ul>
+      <h3>11. Contact Us</h3>
+      <p>If you have any questions or concerns about these Terms and Conditions, please contact us at:</p>
+      <ul>
+        <li>Email: <a href="mailto:wecare@xplore.sbs">wecare@xplore.sbs</a></li>
+      </ul>
 
-    <h3>12. Termination of Use</h3>
-    <p>
-      We reserve the right to suspend or terminate your access to the app if you violate any part of these Terms and Conditions or use the app for any unlawful purpose.
-    </p>
-    <p>
-      By using Xplore, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please discontinue using the app.
-    </p>
-  </div>
+      <h3>12. Termination of Use</h3>
+      <p>
+        We reserve the right to suspend or terminate your access to the app if you violate any part of these Terms and Conditions or use the app for any unlawful purpose.
+      </p>
 
-  <div class="footer">
-    <p>&copy; 2025 Xplore. All rights reserved.</p>
+      <p>
+        By using Xplore, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please discontinue using the app.
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Xplore. All rights reserved.</p>
+    </div>
   </div>
 </body>
 </html>
