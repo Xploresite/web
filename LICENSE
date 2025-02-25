@@ -4,7 +4,10 @@ Copyright (c) 2025 Xplore
 All rights reserved. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
 
 Third-Party Services:
-This software integrates with Google Drive and other third-party services. Users must comply with Google's Terms of Service and any other applicable third-party terms when using these features. We do not guarantee the continuous availability or functionality of these third-party services.
+This software integrates with Google Drive, Wikipedia, and other third-party services. Users must comply with Google's Terms of Service, Wikimedia Foundation Terms of Use, and any other applicable third-party terms when using these features. We do not guarantee the continuous availability or functionality of these third-party services.
+
+Wikipedia Content:
+Content accessed through WikiXplore feature is sourced from Wikipedia and is subject to Wikipedia's Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0). Any use or redistribution of Wikipedia content must comply with this license and properly attribute Wikipedia as the source.
 
 User Data and Privacy:
 Users retain all rights to their content stored through the software via Google Drive. Users are responsible for ensuring their stored content complies with applicable laws and service terms.
@@ -15,3 +18,4 @@ wecare@xplore.sbs
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 This includes any issues arising from the integration with third-party services or cloud storage providers.
+''';
