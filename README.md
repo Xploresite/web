@@ -69,7 +69,7 @@ You can view the full terms and conditions [here](index.html).
 
 ## About Us
 
-I am **Dipak Kumar Das**, the solo developer behind Xplore. Your donation directly supports my work and the continued growth of the app, ensuring it remains a valuable and trustworthy resource. Thank you for your support!
+I am **Dipak Kumar Das**, the solo developer behind Xplore, committed to continuously enhancing the app by personally developing new features and ensuring a seamless experience. Your support makes all of this possible.
 
 ## Usage
 
