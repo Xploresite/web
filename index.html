@@ -85,7 +85,7 @@
       border-radius: 4px;
     }
     nav a:hover {
-      color: var(--hover-color);
+      color: var(--primary-color);
       background: rgba(0,229,255,0.1);
     }
     .content {
@@ -148,6 +148,24 @@
       border-top: 1px solid rgba(255,255,255,0.1);
       margin-top: 10px;
     }
+    .contact-section {
+      margin-top: 30px;
+      padding: 20px;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .contact-email {
+      color: var(--primary-color);
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .contact-email:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
     html {
       scroll-behavior: smooth;
     }
@@ -200,7 +218,7 @@
       </div>
       
       <p>Explore and experience seamless digital management with Xplore's professional-grade tools and features.</p>
-
+      
       <div class="contact-section">
         <h3>Contact Us</h3>
         <p>Have questions or need assistance? We're here to help!</p>
