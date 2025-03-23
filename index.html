@@ -180,6 +180,54 @@
     html {
       scroll-behavior: smooth;
     }
+    /* Adding new styles for download and support section */
+    .download-section {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      margin: 30px 0;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 25px 0;
+      flex-wrap: wrap;
+    }
+
+    .download-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 24px;
+      background: var(--primary-color);
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .support-button {
+      background: #ff813f;
+    }
+
+    .download-button:hover {
+      transform: translateY(-3px);
+      background: var(--secondary-color);
+    }
+
+    .support-button:hover {
+      background: #ff6b1f;
+    }
+
+    .button-icon {
+      margin-right: 10px;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
@@ -187,6 +235,21 @@
     <div class="header">
       <h1>Xplore</h1>
       <p>Your Multi-Utility App</p>
+    </div>
+     <!-- Adding new download section after header -->
+    <div class="download-section">
+      <h2>Download & Support</h2>
+      <p>Get Xplore now and support our development!</p>
+      <div class="download-buttons">
+        <a href="https://play.google.com/store/apps/details?id=sbs.xplore.test3" class="download-button" target="_blank">
+          <span class="button-icon">🤖</span>
+          Download on Google Play
+        </a>
+        <a href="https://buymeacoffee.com/dipaksumiti" class="download-button support-button" target="_blank">
+          <span class="button-icon">☕</span>
+          Support on Buy Me a Coffee
+        </a>
+      </div>
     </div>
     <nav>
       <a href="https://xplore.sbs/privacy/" target="_blank">Click Here for Privacy Policy</a>
