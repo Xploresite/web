@@ -67,27 +67,33 @@
       font-weight: 500;
     }
     nav {
-      text-align: center;
-      margin-bottom: 30px;
-      padding: 12px 0;
-      background: var(--section-bg);
-      border-radius: var(--border-radius);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--primary-color);
-      font-weight: 600;
-      margin: 0 15px;
-      font-size: 1.1em;
-      transition: color 0.3s ease;
-      padding: 6px 12px;
-      border-radius: 4px;
-    }
-    nav a:hover {
-      color: var(--primary-color);
-      background: rgba(0,229,255,0.1);
-    }
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 16px 0;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--primary-color);
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+nav a:hover {
+  transform: translateY(-3px);
+  background: var(--secondary-color);
+  color: #000;
+}
+
     .content {
       padding: 30px;
       background: var(--section-bg);
@@ -167,19 +173,30 @@
       text-decoration: underline;
     }
     .privacy-note {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 1em;
-      color: var(--primary-color);
-    }
-    /* Override link color in the privacy note */
-    .privacy-note a {
-      color: #e0e0e0;
-      text-decoration: underline;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
+  text-align: center;
+  margin-top: 20px;
+  padding: 16px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.privacy-note p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 0.95em;
+}
+
+.privacy-note a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.privacy-note a:hover {
+  color: var(--secondary-color);
+}
     /* Adding new styles for download and support section */
     .download-section {
       background: var(--card-bg);
@@ -251,13 +268,20 @@
         </a>
       </div>
     </div>
-    <nav>
-      <a href="https://xplore.sbs/privacy/" target="_blank">Click Here for Privacy Policy</a>
-    </nav>
-    <!-- Optional: Additional explicit note with the URL -->
-    <div class="privacy-note">
-      <p>Privacy Policy URL: <a href="https://xplore.sbs/privacy/" target="_blank">https://xplore.sbs/privacy/</a></p>
-    </div>
+    <!-- Update the nav section -->
+<nav>
+  <a href="https://xplore.sbs/privacy/" target="_blank">
+    <span style="margin-right: 8px;">🔒</span>
+    Privacy Policy
+  </a>
+</nav>
+    
+<!-- Update the privacy note section -->
+<div class="privacy-note">
+  <p>Privacy Policy URL: 
+    <a href="https://xplore.sbs/privacy/" target="_blank">https://xplore.sbs/privacy/</a>
+  </p>
+</div>
     <div class="content">
       <h2>Welcome to Xplore</h2>
       <p>Xplore is designed to help you manage your digital tasks effortlessly. Our comprehensive solution streamlines file management, communication, and information access in one powerful application.</p>
