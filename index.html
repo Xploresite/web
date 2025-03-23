@@ -93,6 +93,14 @@ nav a:hover {
   background: var(--secondary-color);
   color: #000;
 }
+    /* Add the new styles RIGHT HERE, after the nav styles above */
+.privacy-button {
+  background: #424242 !important;  /* Professional dark gray */
+}
+
+.privacy-button:hover {
+  background: #616161 !important;  /* Slightly lighter gray on hover */
+}
 
     .content {
       padding: 30px;
@@ -270,7 +278,7 @@ nav a:hover {
     </div>
     <!-- Update the nav section -->
 <nav>
-  <a href="https://xplore.sbs/privacy/" target="_blank">
+  <a href="https://xplore.sbs/privacy/" target="_blank" class="privacy-button">
     <span style="margin-right: 8px;">🔒</span>
     Privacy Policy
   </a>
