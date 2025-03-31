@@ -205,6 +205,54 @@ nav a:hover {
 .privacy-note a:hover {
   color: var(--secondary-color);
 }
+/* Add these new styles after your existing CSS */
+  .feature-details {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    margin: 20px 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .feature-list li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #bbb;
+  }
+
+  .feature-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+  }
+
+  /* Update the features grid for better responsiveness */
+  .features {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+
+  /* Add hover effect for feature cards */
+  .feature-card {
+    transition: all 0.3s ease;
+  }
+
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    border-left-width: 5px;
+  }
+  
     /* Adding new styles for download and support section */
     .download-section {
       background: var(--card-bg);
@@ -297,6 +345,10 @@ nav a:hover {
       <h3>Key Features</h3>
       <div class="features">
         <div class="feature-card">
+        <div class="feature-title">Personal Notes</div>
+          <p class="feature-desc">Create, manage, and export your notes directly on your device. Save them as text files and access them anytime, even offline.</p>
+        </div>
+        
           <div class="feature-title">Email-Based Chat</div>
           <p class="feature-desc">Communicate seamlessly through email-to-email messaging, keeping all your conversations organized in one place.</p>
         </div>
@@ -325,6 +377,20 @@ nav a:hover {
           <div class="feature-title">Google Account Integration</div>
           <p class="feature-desc">Easily connect with your Google accounts for enhanced functionality and convenience.</p>
         </div>
+      </div>
+      
+      <!-- Add a new section about Personal Notes after the features section -->
+      <h3>Personal Notes Feature</h3>
+      <div class="feature-details">
+        <p>Our Personal Notes feature provides a convenient way to manage your thoughts and information:</p>
+        <ul class="feature-list">
+          <li>Create and edit notes with a clean, distraction-free interface</li>
+          <li>Export selected notes or all notes as text files</li>
+          <li>Local storage ensures your notes are always private and accessible</li>
+          <li>Dark theme interface for comfortable reading and writing</li>
+          <li>No cloud sync required - your notes stay on your device</li>
+          <li>Compatible with Android 13+ without additional permissions</li>
+        </ul>
       </div>
       
       <p>Explore and experience seamless digital management with Xplore's professional-grade tools and features.</p>
