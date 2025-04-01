@@ -5,60 +5,194 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xplore - License</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Full CSS identical to homepage -->
   <style>
-    /* Your existing CSS styles here */
-    /* Additional styles for license content */
-    .license-content {
-      background: var(--section-bg);
-      padding: 30px;
+    /* All CSS from homepage - DO NOT MODIFY */
+    :root {
+      --primary-color: #00e5ff;
+      --secondary-color: #00b8d4;
+      --background-color: #121212;
+      --surface-color: #1e1e1e;
+      --text-color: #e0e0e0;
+      --border-radius: 12px;
+      --section-bg: #252525;
+      --card-bg: #2a2a2a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--background-color);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background: var(--surface-color);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
       border-radius: var(--border-radius);
-      margin: 20px 0;
-      line-height: 1.8;
     }
 
-    .license-content h3 {
-      color: var(--primary-color);
-      margin: 25px 0 15px;
+    .header {
+      text-align: center;
+      padding: 50px 0;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: #000;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+      margin: -20px -20px 30px -20px;
+      position: relative;
+      overflow: hidden;
     }
 
-    .license-info {
+    .header::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: rgba(0,0,0,0.2);
+    }
+
+    .header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #000;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .header p {
+      font-size: 1.3em;
+      opacity: 0.9;
+      font-weight: 500;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 16px 0;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 24px;
+      background: var(--primary-color);
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: translateY(-3px);
+      background: var(--secondary-color);
+      color: #000;
+    }
+
+    .content {
+      padding: 30px;
+      background: var(--section-bg);
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 30px;
+    }
+
+    .features {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
       background: var(--card-bg);
       padding: 20px;
       border-radius: 8px;
-      margin: 20px 0;
       border-left: 3px solid var(--primary-color);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .timestamp {
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+
+    .feature-title {
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .feature-desc {
+      font-size: 0.95em;
+      color: #bbb;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      padding: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 10px;
+    }
+
+    .contact-section {
+      margin-top: 30px;
+      padding: 20px;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .contact-email {
       color: var(--primary-color);
       font-weight: 500;
-      margin-bottom: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
     }
 
-    .contact-info {
-      color: var(--text-color);
-      background: var(--card-bg);
-      padding: 15px;
-      border-radius: 8px;
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    .section {
-      margin: 25px 0;
-      padding: 20px;
-      background: var(--card-bg);
-      border-radius: 8px;
-      border-left: 3px solid var(--primary-color);
+    .contact-email:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- Same header as homepage -->
     <div class="header">
       <h1>Xplore License</h1>
     </div>
 
+    <!-- Same navigation style -->
     <nav>
       <a href="https://xplore.sbs" class="download-button">
         <span style="margin-right: 8px;">🏠</span>
@@ -67,46 +201,53 @@
     </nav>
 
     <div class="content">
-      <div class="license-content">
-        <div class="license-info">
-          <!-- Dynamic date/time and user info will be inserted here -->
-        </div>
-
+      <!-- License content in feature cards -->
+      <div class="feature-card">
         <h2>All Rights Reserved License</h2>
-        <p>Copyright (c) 2025 Xplore</p>
-
-        <div class="section">
+        <div class="feature-desc">
+          <p>Copyright (c) 2025 Xplore</p>
           <p>All rights reserved. No part of this project may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the author, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.</p>
         </div>
+      </div>
 
-        <div class="section">
-          <h3>Third-Party Services</h3>
+      <div class="feature-card">
+        <div class="feature-title">Third-Party Services</div>
+        <div class="feature-desc">
           <p>This software integrates with Google Drive, Wikipedia, and other third-party services. Users must comply with Google's Terms of Service, Wikimedia Foundation Terms of Use, and any other applicable third-party terms when using these features. We do not guarantee the continuous availability or functionality of these third-party services.</p>
         </div>
+      </div>
 
-        <div class="section">
-          <h3>Wikipedia Content</h3>
+      <div class="feature-card">
+        <div class="feature-title">Wikipedia Content</div>
+        <div class="feature-desc">
           <p>Content accessed through WikiXplore feature is sourced from Wikipedia and is subject to Wikipedia's Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0). Any use or redistribution of Wikipedia content must comply with this license and properly attribute Wikipedia as the source.</p>
         </div>
+      </div>
 
-        <div class="section">
-          <h3>User Data and Privacy</h3>
+      <div class="feature-card">
+        <div class="feature-title">User Data and Privacy</div>
+        <div class="feature-desc">
           <p>Users retain all rights to their content stored through the software via Google Drive. Users are responsible for ensuring their stored content complies with applicable laws and service terms.</p>
         </div>
+      </div>
 
-        <div class="section">
-          <h3>Warranty Disclaimer</h3>
+      <div class="feature-card" style="border-left-color: #ff4444;">
+        <div class="feature-title">Warranty Disclaimer</div>
+        <div class="feature-desc">
           <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
           <p>This includes any issues arising from the integration with third-party services or cloud storage providers.</p>
         </div>
+      </div>
 
-        <div class="contact-info">
-          <p>For permission requests, write to the author at:</p>
-          <a href="mailto:wecare@xplore.sbs" class="contact-email">wecare@xplore.sbs</a>
-        </div>
+      <!-- Same contact section as homepage -->
+      <div class="contact-section">
+        <h3>Contact Information</h3>
+        <p>For permission requests:</p>
+        <p>Email: <a href="mailto:wecare@xplore.sbs" class="contact-email">wecare@xplore.sbs</a></p>
       </div>
     </div>
 
+    <!-- Same footer as homepage -->
     <footer>
       <p>&copy; 2025 Xplore. All rights reserved.</p>
     </footer>
