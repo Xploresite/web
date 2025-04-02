@@ -101,6 +101,21 @@ nav a:hover {
 .privacy-button:hover {
   background: #BDBDBD !important;  /* Lighter on hover */
 }
+    .license-button {
+  background: #4CAF50 !important;
+}
+
+.license-button:hover {
+  background: #66BB6A !important;
+}
+
+.privacy-note a {
+  word-break: break-word;
+}
+
+.privacy-note p {
+  line-height: 1.8;
+}
 
     .content {
       padding: 30px;
@@ -328,20 +343,28 @@ nav a:hover {
         </a>
       </div>
     </div>
-    <!-- Update the nav section -->
+   <!-- Update the nav section -->
 <nav>
-  <a href="https://xplore.sbs/privacy/" target="_blank" class="privacy-button">
-    <span style="margin-right: 8px;">🔒</span>
-    Privacy Policy
-  </a>
+  <div style="display: flex; gap: 15px; justify-content: center;">
+    <a href="https://xplore.sbs/privacy/" target="_blank" class="privacy-button">
+      <span style="margin-right: 8px;">🔒</span>
+      Privacy Policy
+    </a>
+    <a href="https://xplore.sbs/license/" target="_blank" class="license-button">
+      <span style="margin-right: 8px;">📜</span>
+      License
+    </a>
+  </div>
 </nav>
     
-<!-- Update the privacy note section -->
+<!-- Update the note section -->
 <div class="privacy-note">
-  <p>Privacy Policy URL: 
-    <a href="https://xplore.sbs/privacy/" target="_blank">https://xplore.sbs/privacy/</a>
+  <p>
+    Privacy Policy: <a href="https://xplore.sbs/privacy/" target="_blank">https://xplore.sbs/privacy/</a><br>
+    Software License: <a href="https://xplore.sbs/license/" target="_blank">https://xplore.sbs/license/</a>
   </p>
 </div>
+    
     <div class="content">
       <h2>Welcome to Xplore</h2>
       <p>Xplore is designed to help you manage your digital tasks effortlessly. Our comprehensive solution streamlines file management, communication, and information access in one powerful application.</p>
