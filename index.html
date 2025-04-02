@@ -82,12 +82,13 @@ nav a:hover {
   background: var(--secondary-color);
   color: #000;
 }
-   nav .button-container {
+  nav .button-container {
   display: flex;
-  flex-direction: column; /* Changed from row to column layout */
+  flex-direction: column; /* Always vertical */
   gap: 15px;
   justify-content: center;
-  align-items: center; /* Center buttons horizontally */
+  align-items: center;
+  width: 100%; /* Take full width */
 }
 
 nav a {
@@ -95,8 +96,9 @@ nav a {
   align-items: center;
   justify-content: center;
   padding: 12px 24px;
-  width: 80%; /* Changed from min-width to width for better mobile layout */
-  max-width: 300px; /* Add maximum width */
+  width: 80%; /* Width relative to container */
+  max-width: 300px;
+  min-width: unset; /* Remove any minimum width constraints */
   background: var(--primary-color);
   color: #000;
   text-decoration: none;
