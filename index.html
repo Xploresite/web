@@ -93,6 +93,25 @@ nav a:hover {
   background: var(--secondary-color);
   color: #000;
 }
+    nav .button-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  padding: 12px 24px;
+  min-width: 200px; /* Set a fixed minimum width for both buttons */
+  background: var(--primary-color);
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
     /* Add the new styles RIGHT HERE, after the nav styles above */
 .privacy-button {
    background: #9E9E9E !important;  /* Very visible light gray */
@@ -346,7 +365,7 @@ nav a:hover {
    <!-- Update the nav section -->
 <!-- Nav section -->
 <nav>
-  <div style="display: flex; gap: 15px; justify-content: center;">
+  <div class="button-container">
     <a href="https://xplore.sbs/privacy" target="_blank" class="privacy-button">
       <span style="margin-right: 8px;">🔒</span>
       Privacy Policy
