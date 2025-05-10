@@ -267,15 +267,33 @@ nav a:hover {
 
       <div class="section">
         <h2>Privacy Policy</h2>
-        <p class="last-updated">Last Updated: March 30, 2025</p>
+        <p class="last-updated">Last Updated: May 10, 2025</p>
         <p>This privacy policy explains how Xplore collects, uses, and protects your information.</p>
         
-        <h3>1. Information We Collect</h3>
-        <p>We collect the following information:</p>
-        <ul>
-          <li>Personal identification information</li>
-          <p><em>(Note: We do not track any usage data regarding how users interact with the app.)</em></p>
-        </ul>
+       <h3>1. Information We Collect</h3>
+<p>We collect the following information:</p>
+<ul>
+  <li>Personal identification information:</li>
+  <ul>
+    <li>Email address - Used for:
+      <ul>
+        <li>Email-to-email chat functionality</li>
+        <li>User search and discovery</li>
+        <li>Managing blocked users</li>
+        <li>Authentication attempts</li>
+        <li>User status updates</li>
+      </ul>
+    </li>
+    <li>Firebase User ID (UID) - Used for:
+      <ul>
+        <li>Secure user authentication</li>
+        <li>Account management</li>
+        <li>User data association</li>
+      </ul>
+    </li>
+  </ul>
+</ul>
+<p><em>(Note: We do not track any usage data regarding how users interact with the app.)</em></p>
 
         <h3>2. How We Use Your Information</h3>
         <p>We use your information to:</p>
@@ -291,7 +309,7 @@ nav a:hover {
 
       <div class="section">
         <h2>Terms and Conditions</h2>
-        <p class="last-updated">Last Updated: March 30, 2025</p>
+        <p class="last-updated">Last Updated: May 10, 2025</p>
 
         <h3>1. Overview of Services</h3>
         <p>Xplore is a multi-utility mobile application that offers various features, including:</p>
@@ -302,6 +320,8 @@ nav a:hover {
           <li><strong>Cloud File Storage:</strong> The app integrates with Google Drive to provide secure cloud storage for your files.</li>
           <li><strong>Messaging:</strong> Xplore supports email-based chat. Messages—including the content sent by the user and the time they were sent—are stored on our servers for up to 24 hours.</li>
           <li><strong>WikiXplore:</strong> Access Wikipedia content directly within the app for quick research and information.</li>
+          <li><strong>On This Day:</strong> Discover historical events, milestones, and memories that occurred on this day throughout history.</li>
+          <li><strong>Daily Inspiration Quotes:</strong> Start your day with motivational quotes from notable figures, refreshed daily to keep you inspired.</li>
         </ul>
 
         <h3>2. Permissions Required</h3>
@@ -349,32 +369,66 @@ nav a:hover {
         </p>
 
         <h3>8. Account Deletion</h3>
-        <p>
-          If you choose to delete your account, all personal user information stored on our servers will be permanently deleted. However, your cloud files stored via Google Drive will not be deleted, as they are managed by Google Drive and remain under your control.
-        </p>
-        <p>
-          You can delete your account and associated data at any time by following these steps:
-        </p>
-        <ol>
-          <li>Open the Xplore app</li>
-          <li>Navigate to "Account Overview" section</li>
-          <li>Tap on the "Delete Account" option</li>
-          <li>Confirm your decision when prompted</li>
-        </ol>
-        <p>
-          Once confirmed, all your personal information and data stored on our servers will be permanently removed. If you experience any issues with account deletion, please contact us at <a href="mailto:wecare@xplore.sbs">wecare@xplore.sbs</a>.
-        </p>
+<p>If you choose to delete your account, all personal user information stored on our servers will be permanently deleted. However, your cloud files stored via Google Drive will not be deleted, as they are managed by Google Drive and remain under your control.</p>
 
-        <h3>9. Wikipedia Content Usage</h3>
-        <p>
-          Content accessed through WikiXplore is sourced from Wikipedia and is protected under the Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0). This content:
-        </p>
-        <ul>
-          <li>May be subject to additional terms of use as specified by the Wikimedia Foundation</li>
-          <li>Must be attributed to Wikipedia when shared or redistributed</li>
-          <li>May be updated or modified on Wikipedia, and such changes will be reflected in WikiXplore</li>
-          <li>Is provided "as is" without any guarantees of accuracy or completeness</li>
-        </ul>
+<p>You can delete your account and associated data at any time by following these steps:</p>
+<ol>
+  <li>Open the Xplore app</li>
+  <li>Navigate to "Privacy and Account" section</li>
+  <li>Tap on the "Delete Account" option</li>
+  <li>Confirm your decision when prompted</li>
+</ol>
+
+<h4>Account and Data Deletion Process</h4>
+<p>We provide a clear and secure way to delete your account and data:</p>
+
+<ol>
+  <li><strong>Message Deletion Requirement:</strong><br>
+    Account deletion is blocked if there are any existing messages. You must delete all messages manually before proceeding.</li>
+  
+  <li><strong>Initial Cleanup:</strong><br>
+    Once messages are deleted, the deletion process begins by removing all locally stored data from your device, including data stored in Hive and SharedPreferences.</li>
+  
+  <li><strong>Cloud Data Deletion:</strong><br>
+    We then call secure cloud functions to delete any of the following associated data from our systems:
+    <ul>
+      <li>Blocked users</li>
+      <li>Phantom Privacy settings</li>
+      <li>User status</li>
+      <li>Authentication attempts</li>
+    </ul>
+  </li>
+  
+  <li><strong>Final Confirmation Step:</strong><br>
+    At the final step, you're clearly informed of your options:
+    <ul>
+      <li><strong>Cancel:</strong> Only your login credentials remain (no personal data, chats, or settings). Your account will behave like a newly created, clean account.</li>
+      <li><strong>Delete:</strong> Your Firebase Authentication credentials are permanently deleted along with your user ID (UID) and email from our database.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>We use Firebase's official tools, including the Delete User Data extension, to ensure full and permanent removal of your account and data when you choose to delete.</p>
+
+<p>If you experience any issues with account deletion, please contact us at <a href="mailto:wecare@xplore.sbs">wecare@xplore.sbs</a>.</p>
+
+       <h3>9. Wikipedia Content Usage</h3>
+<p>Content accessed through WikiXplore is sourced from Wikipedia and is protected under the Creative Commons Attribution-ShareAlike License (CC BY-SA 3.0). This content:</p>
+<ul>
+  <li>May be subject to additional terms of use as specified by the Wikimedia Foundation</li>
+  <li>Must be attributed to Wikipedia when shared or redistributed</li>
+  <li>May be updated or modified on Wikipedia, and such changes will be reflected in WikiXplore</li>
+  <li>Is provided "as is" without any guarantees of accuracy or completeness</li>
+</ul>
+
+<h4>Browsing Options</h4>
+<p>Users have control over how they view external content:</p>
+<ul>
+  <li>Users may choose to view external content either in our in-app browser or their device's default web browser</li>
+  <li>This preference can be adjusted in the app settings at any time</li>
+  <li>When using the in-app browser, standard app privacy policies apply</li>
+  <li>When using external browsers, the privacy policies of those browsers will apply</li>
+</ul>
 
         <h3>10. Updates and Changes</h3>
         <p>
