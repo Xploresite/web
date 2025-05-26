@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Xplore - Home</title>
+  <title>Xplore - Multi-Utility Android App | File Management & Personal Notes</title>
+  <meta name="description" content="Xplore is a comprehensive Android app for file management, personal notes, email chat, cloud storage, and more. Download now from Google Play Store.">
+  <meta name="keywords" content="Android app, file management, personal notes, cloud storage, QR scanner, email chat, productivity">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -67,69 +69,60 @@
       font-weight: 500;
     }
     nav {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 16px 0;
-  background: var(--card-bg);
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  border: 1px solid rgba(255,255,255,0.1);
-}
-
-
-nav a:hover {
-  transform: translateY(-3px);
-  background: var(--secondary-color);
-  color: #000;
-}
-  nav .button-container {
-  display: flex;
-  flex-direction: column; /* Always vertical */
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Take full width */
-}
-
-nav a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 24px;
-  width: 80%; /* Width relative to container */
-  max-width: 300px;
-  min-width: unset; /* Remove any minimum width constraints */
-  background: var(--primary-color);
-  color: #000;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-    /* Add the new styles RIGHT HERE, after the nav styles above */
-.privacy-button {
-   background: #9E9E9E !important;  /* Very visible light gray */
-}
-
-.privacy-button:hover {
-  background: #BDBDBD !important;  /* Lighter on hover */
-}
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 16px 0;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    nav a:hover {
+      transform: translateY(-3px);
+      background: var(--secondary-color);
+      color: #000;
+    }
+    nav .button-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      width: 80%;
+      max-width: 300px;
+      min-width: unset;
+      background: var(--primary-color);
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .privacy-button {
+      background: #9E9E9E !important;
+    }
+    .privacy-button:hover {
+      background: #BDBDBD !important;
+    }
     .license-button {
-  background: #4CAF50 !important;
-}
-
-.license-button:hover {
-  background: #66BB6A !important;
-}
-
-.privacy-note a {
-  word-break: break-word;
-}
-
-.privacy-note p {
-  line-height: 1.8;
-}
-
+      background: #4CAF50 !important;
+    }
+    .license-button:hover {
+      background: #66BB6A !important;
+    }
+    .privacy-note a {
+      word-break: break-word;
+    }
+    .privacy-note p {
+      line-height: 1.8;
+    }
     .content {
       padding: 30px;
       background: var(--section-bg);
@@ -209,80 +202,66 @@ nav a {
       text-decoration: underline;
     }
     .privacy-note {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px; /* Added margin to create space between privacy note and content */
-  padding: 16px;
-  background: var(--card-bg);
-  border-radius: var(--border-radius);
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.privacy-note p {
-  margin: 0;
-  color: var(--text-color);
-  font-size: 0.95em;
-}
-
-.privacy-note a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.privacy-note a:hover {
-  color: var(--secondary-color);
-}
-/* Add these new styles after your existing CSS */
-  .feature-details {
-    background: var(--card-bg);
-    padding: 25px;
-    border-radius: var(--border-radius);
-    margin: 20px 0;
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  }
-
-  .feature-list {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0;
-  }
-
-  .feature-list li {
-    padding: 10px 0;
-    padding-left: 25px;
-    position: relative;
-    color: #bbb;
-  }
-
-  .feature-list li::before {
-    content: "•";
-    color: var(--primary-color);
-    position: absolute;
-    left: 0;
-    font-size: 1.2em;
-  }
-
-  /* Update the features grid for better responsiveness */
-  .features {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-  }
-
-  /* Add hover effect for feature cards */
-  .feature-card {
-    transition: all 0.3s ease;
-  }
-
-  .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-    border-left-width: 5px;
-  }
-  
-    /* Adding new styles for download and support section */
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 16px;
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .privacy-note p {
+      margin: 0;
+      color: var(--text-color);
+      font-size: 0.95em;
+    }
+    .privacy-note a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .privacy-note a:hover {
+      color: var(--secondary-color);
+    }
+    .feature-details {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: var(--border-radius);
+      margin: 20px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
+    .feature-list li {
+      padding: 10px 0;
+      padding-left: 25px;
+      position: relative;
+      color: #bbb;
+    }
+    .feature-list li::before {
+      content: "•";
+      color: var(--primary-color);
+      position: absolute;
+      left: 0;
+      font-size: 1.2em;
+    }
+    .features {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .feature-card {
+      transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+      border-left-width: 5px;
+    }
     .download-section {
       background: var(--card-bg);
       padding: 30px;
@@ -292,7 +271,6 @@ nav a {
       border: 1px solid rgba(255,255,255,0.1);
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-
     .download-buttons {
       display: flex;
       justify-content: center;
@@ -300,7 +278,6 @@ nav a {
       margin: 25px 0;
       flex-wrap: wrap;
     }
-
     .download-button {
       display: inline-flex;
       align-items: center;
@@ -312,37 +289,117 @@ nav a {
       font-weight: 600;
       transition: transform 0.3s ease, background 0.3s ease;
     }
-
     .support-button {
       background: #ff813f;
     }
-
     .download-button:hover {
       transform: translateY(-3px);
       background: var(--secondary-color);
     }
-
     .support-button:hover {
       background: #ff6b1f;
     }
-
     .button-icon {
       margin-right: 10px;
       font-size: 1.2em;
     }
+    
+    /* Enhanced content styles */
+    .benefits-section {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      margin: 30px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    .tutorial-section {
+      background: var(--section-bg);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      margin: 30px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    .step-card {
+      background: var(--card-bg);
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 8px;
+      border-left: 3px solid var(--secondary-color);
+    }
+    
+    .step-number {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 1.2em;
+    }
+    
+    .faq-section {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      margin: 30px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    .faq-item {
+      margin: 20px 0;
+      padding: 15px;
+      background: var(--section-bg);
+      border-radius: 8px;
+    }
+    
+    .faq-question {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .tech-specs {
+      background: var(--section-bg);
+      padding: 25px;
+      border-radius: var(--border-radius);
+      margin: 20px 0;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .spec-item {
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 3px solid var(--primary-color);
+    }
+    
+    .spec-label {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
   </style>
-   <!-- AdSense Code -->
+  <!-- AdSense Code -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6181842049927319"
      crossorigin="anonymous"></script>
-   <!-- End of AdSense Code -->
+  <!-- End of AdSense Code -->
 </head>
 <body>
   <div class="container">
     <div class="header">
       <h1>Xplore</h1>
-      <p>Your Multi-Utility App</p>
+      <p>Your Multi-Utility Android App</p>
     </div>
-     <!-- Adding new download section after header -->
+    
+    <!-- Download section -->
     <div class="download-section">
       <h2>Download & Support</h2>
       <p>Get Xplore now and support our development!</p>
@@ -357,95 +414,215 @@ nav a {
         </a>
       </div>
     </div>
-   <!-- Update the nav section -->
-<!-- Nav section -->
-<nav>
-  <div class="button-container">
-    <a href="https://xplore.sbs/privacy/" target="_blank" class="privacy-button">
-      <span style="margin-right: 8px;">🔒</span>
-      Privacy Policy
-    </a>
-    <a href="https://xplore.sbs/license" target="_blank" class="license-button">
-      <span style="margin-right: 8px;">📜</span>
-      License
-    </a>
-  </div>
-</nav>
+   
+    <!-- Nav section -->
+    <nav>
+      <div class="button-container">
+        <a href="https://xplore.sbs/privacy/" target="_blank" class="privacy-button">
+          <span style="margin-right: 8px;">🔒</span>
+          Privacy Policy
+        </a>
+        <a href="https://xplore.sbs/license" target="_blank" class="license-button">
+          <span style="margin-right: 8px;">📜</span>
+          License
+        </a>
+      </div>
+    </nav>
 
-<!-- Privacy note section -->
-<div class="privacy-note">
-  <p>
-    Privacy Policy: <a href="https://xplore.sbs/privacy/" target="_blank">https://xplore.sbs/privacy</a><br>
-    Software License: <a href="https://xplore.sbs/license" target="_blank">https://xplore.sbs/license</a>
-  </p>
-</div>
+    <!-- Privacy note section -->
+    <div class="privacy-note">
+      <p>
+        Privacy Policy: <a href="https://xplore.sbs/privacy/" target="_blank">https://xplore.sbs/privacy</a><br>
+        Software License: <a href="https://xplore.sbs/license" target="_blank">https://xplore.sbs/license</a>
+      </p>
+    </div>
     
     <div class="content">
-      <h2>Welcome to Xplore</h2>
-      <p>Xplore is designed to help you manage your digital tasks effortlessly. Our comprehensive solution streamlines file management, communication, and information access in one powerful application.</p>
+      <h2>Welcome to Xplore - The Ultimate Android Productivity App</h2>
+      <p>Xplore is a comprehensive Android application designed to revolutionize how you manage your digital life. Built with modern Android development practices and targeting Android 13+, Xplore combines essential productivity tools into one seamless experience. Whether you're a student, professional, or tech enthusiast, Xplore provides the tools you need to stay organized and productive.</p>
       
-      <h3>Key Features</h3>
-      <div class="features">
-        <div class="feature-card">
-        <div class="feature-title">Personal Notes</div>
-          <p class="feature-desc">Create, manage, and export your notes directly on your device. Save them as text files and access them anytime, even offline.</p>
-        </div>
-        
-         <div class="feature-card">
-          <div class="feature-title">Email-Based Chat</div>
-          <p class="feature-desc">Communicate seamlessly through email-to-email messaging, keeping all your conversations organized in one place.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-title">Cloud File Storage</div>
-          <p class="feature-desc">Securely save and access your files from anywhere with our robust cloud storage solution.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-title">File Management</div>
-          <p class="feature-desc">Upload, download, and delete files and folders with an intuitive interface designed for efficiency.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-title">WikiXplore</div>
-          <p class="feature-desc">Access Wikipedia knowledge directly within the app for quick research and information gathering.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-title">QR Code Scanner</div>
-          <p class="feature-desc">Instantly scan and decode QR codes for seamless information access and sharing.</p>
-        </div>
-        
-        <div class="feature-card">
-          <div class="feature-title">Google Account Integration</div>
-          <p class="feature-desc">Easily connect with your Google accounts for enhanced functionality and convenience.</p>
-        </div>
-      </div>
+      <p>Our mission is to create a unified platform that eliminates the need for multiple apps by integrating note-taking, communication, and information access tools. With over 28,000 lines of carefully crafted code and extensive testing on various Android devices, Xplore delivers reliability and performance you can trust.</p>
       
-      <!-- Add a new section about Personal Notes after the features section -->
-      <h3>Personal Notes Feature</h3>
-      <div class="feature-details">
-        <p>Our Personal Notes feature provides a convenient way to manage your thoughts and information:</p>
+      <h3>Why Choose Xplore?</h3>
+      <div class="benefits-section">
+        <p>In today's digital age, smartphone users typically install 30-40 apps to handle various tasks. Xplore reduces this complexity by offering multiple functionalities in a single, well-designed application. Here's why users have made Xplore their go-to productivity app:</p>
+        
         <ul class="feature-list">
-          <li>Create and edit notes with a clean, distraction-free interface</li>
-          <li>Export selected notes or all notes as text files</li>
-          <li>Local storage ensures your notes are always private and accessible</li>
-          <li>Dark theme interface for comfortable reading and writing</li>
-          <li>No cloud sync required - your notes stay on your device</li>
-          <li>Compatible with Android 13+ without additional permissions</li>
+          <li><strong>Unified Interface:</strong> Access all tools from one beautifully designed home screen</li>
+          <li><strong>Privacy-First Design:</strong> Your personal notes stay on your device, never uploaded to external servers</li>
+          <li><strong>Regular Updates:</strong> Continuous improvements based on user feedback</li>
+          <li><strong>Lightweight:</strong> Minimal storage footprint and battery usage</li>
+          <li><strong>No Subscription Fees:</strong> One-time download with lifetime access to all features</li>
         </ul>
       </div>
       
-      <p>Explore and experience seamless digital management with Xplore's professional-grade tools and features.</p>
+      <h3>Comprehensive Feature Overview</h3>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-title">📝 Personal Notes Manager</div>
+          <p class="feature-desc">Create, edit, and organize your thoughts with our advanced note-taking system. Features rich text support, export capabilities, and seamless organization tools for maximum productivity.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-title">📧 Email-Based Communication</div>
+          <p class="feature-desc">Revolutionary email-to-email chat system that transforms traditional email into instant messaging. Send quick messages and maintain conversation threads effortlessly.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-title">☁️ Secure Cloud Storage</div>
+          <p class="feature-desc">Store your important files in the cloud with military-grade encryption. Access your documents, photos, and media from anywhere with automatic synchronization across devices.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title">💱 Live Currency Converter</div>
+          <p class="feature-desc">Real-time exchange rates powered by Frankfurter API. Convert between all major currencies instantly, track rate fluctuations with interactive 30-day history charts, and get financial-grade accuracy for all your currency needs.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-title">🌐 WikiXplore Research Tool</div>
+          <p class="feature-desc">Instantly access trending Wikipedia topics and search for any article of interest—perfect for students, researchers, and curious minds who love to learn. Stay up-to-date with what’s popular and quickly find information on topics you care about.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-title">📱 QR Code Scanner & Generator</div>
+          <p class="feature-desc"> Instantly scan QR codes found on products for fast and accurate information lookup. Designed for quick product identification and details retrieval—perfect for shoppers and inventory management.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-title">🔗 Google Services Integration</div>
+          <p class="feature-desc">Seamless integration with Google Drive. Sync your existing data and maintain continuity across your digital ecosystem.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-title">🔒 Privacy & Security</div>
+          <p class="feature-desc">Built with privacy by design. Local data storage, encrypted cloud uploads, and transparent privacy policy ensure your information remains secure and private.</p>
+        </div>
+      </div>
+
+      <!-- Technical Specifications -->
+      <div class="tech-specs">
+        <h3>Technical Specifications</h3>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">Platform</div>
+            <div>Android 13+ (API Level 33)</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">App Size</div>
+            <div>18 MB download size</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Architecture</div>
+            <div>ARM64-v8a, armeabi-v7a</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Permissions</div>
+            <div>Storage, Camera, Internet</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Target SDK</div>
+            <div>Android 14 (API 34)</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Programming Language</div>
+            <div>Java,Kotlin & Dart</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Getting Started Tutorial -->
+      <div class="tutorial-section">
+        <h3>Getting Started with Xplore</h3>
+        <p>Follow this comprehensive guide to make the most of your Xplore experience:</p>
+        
+        <div class="step-card">
+          <div class="step-number">Step 1: Installation & Setup</div>
+          <p>Download Xplore from the Google Play Store and complete the initial setup process. Grant necessary permissions for optimal functionality, including cloud storage access for saving and syncing your data, and camera access for product QR code scanning. For exporting notes, ensure you allow download permissions when prompted.</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">Step 2: Create Your First Note</div>
+          <p>Navigate to the Personal Notes section and create your first note and try exporting your note as a text file to understand the export functionality.</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">Step 3: Set Up Cloud Storage</div>
+          <p>Configure your cloud storage preferences in the menu. Connect your Google account for seamless integration and test file upload/download functionality with a small test file.</p>
+        </div>
+        
+        <div class="step-card">
+          <div class="step-number">Step 4: Explore Advanced Features</div>
+          <p>Try the QR code scanner with a test QR code, explore WikiXplore for research capabilities, and set up email-based chat with a friend or colleague to experience the full range of Xplore's capabilities.</p>
+        </div>
+      </div>
+
+      <!-- Detailed Personal Notes Feature -->
+      <h3>Personal Notes: Your Digital Brain</h3>
+      <div class="feature-details">
+        <p>The Personal Notes feature in Xplore is designed to be your comprehensive digital notebook. Unlike cloud-based note apps that sync your private thoughts to external servers, Xplore keeps your notes locally on your device, ensuring complete privacy and instant access.</p>
+        
+        <h4>Advanced Note-Taking Capabilities:</h4>
+        <ul class="feature-list">
+          <li><strong>Timestamp Integration:</strong> Automatic date and time stamps for better organization</li>
+          <li><strong>Export Functionality:</strong> Save individual notes or entire collections as .txt files</li>
+          <li><strong>Dark Theme Interface:</strong> Comfortable writing experience in low-light conditions</li>
+        </ul>
+        
+        <p>Perfect for students taking lecture notes, professionals jotting down meeting minutes, writers capturing inspiration, or anyone who wants a reliable, private note-taking solution that works offline.</p>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        
+        <div class="faq-item">
+          <div class="faq-question">Is Xplore free to use?</div>
+          <div>Yes, Xplore is completely free to download and use. All features are included without any subscription fees or in-app purchases. We're supported by optional donations from users who love the app.</div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">How secure is my data in Xplore?</div>
+          <div>Your privacy is our top priority. Personal notes are stored locally on your device and never uploaded to external servers. Cloud storage features use encrypted connections, and you control what data is shared.</div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">Can I use Xplore offline?</div>
+          <div> Xplore requires an internet connection for most features, including Personal Notes, cloud storage, WikiXplore, and product QR code scanning. Please ensure you are connected to the internet for the best experience.</div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">What Android versions are supported?</div>
+          <div>Xplore requires Android 13 or higher for optimal performance and security. We regularly update the app to support the latest Android features and security standards.</div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">How often is Xplore updated?</div>
+          <div>We release updates monthly with bug fixes, performance improvements, and new features based on user feedback. All updates are free and automatic through the Google Play Store.</div>
+        </div>
+      </div>
+
+      <!-- User Testimonials Section -->
+      <div class="benefits-section">
+        <h3>What Users Are Saying</h3>
+        <p><em>"Xplore exceeded my expectations. The app is incredibly polished and packed with innovative features that are easy to use. From personal notes with export options to smooth ad integration, it’s the ultimate productivity hub."</em> - Sani Kanu, Student</p>
+        
+        <p><em>"Absolutely love Xplore! The combination of secure email-based chat, powerful cloud features, and handy tools like the QR/barcode scanner and personal notes makes it a must‑have for anyone looking to boost their productivity. Five stars"</em> - Babula Nunia, Self Employed</p>
+        
+        <p><em>"phantom mode is the ultimate privacy, it's awesome."</em> - BunnY Op, Student</p>
+      </div>
+      
+      <p>Discover Xplore—the new productivity app designed to bring all your essential tools into one beautifully designed application. Download today and experience a smarter, more organized way to get things done.</p>
       
       <div class="contact-section">
-        <h3>Contact Us</h3>
-        <p>Have questions or need assistance? We're here to help!</p>
+        <h3>Contact & Support</h3>
+        <p>Have questions, suggestions, or need technical support? I'm here to help you get the most out of Xplore. As an indie developer, your feedback is especially valuable—feel free to reach out anytime!</p>
         <p>Email: <a href="mailto:wecare@xplore.sbs" class="contact-email">wecare@xplore.sbs</a></p>
+        <p>I typically respond to all inquiries within 24 hours. For urgent issues, please include "URGENT" in your subject line or message, and I’ll do my best to prioritize your request.</p>
       </div>
     </div>
+    
     <footer>
-      <p>&copy; 2025 Xplore. All rights reserved.</p>
+      <p>&copy; 2025 Xplore. All rights reserved. | Made with ❤️ for Android users worldwide</p>
     </footer>
   </div>
 </body>
