@@ -262,6 +262,47 @@
       border-left: 3px solid var(--secondary-color);
       font-size: 0.9em;
     }
+
+    <style>
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.header-text {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+  }
+}
   </style>
 </head>
 <body>
@@ -271,11 +312,16 @@
       <a href="https://xplore.sbs">Home</a> / License
     </div>
 
-    <!-- Header -->
-    <div class="header">
+   <!-- Replace your existing header section with this -->
+<div class="header">
+  <div class="header-content">
+    <img src="path/to/your/logo.png" alt="Xplore Logo" class="logo">
+    <div class="header-text">
       <h1>Xplore</h1>
       <p>Software License Agreement</p>
     </div>
+  </div>
+</div>
 
     <!-- Navigation -->
     <nav>
