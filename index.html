@@ -277,32 +277,28 @@
       gap: 20px;
       margin: 25px 0;
       flex-wrap: wrap;
-    }
-    .download-button {
-      display: inline-flex;
       align-items: center;
-      padding: 12px 24px;
-      background: var(--primary-color);
-      color: #000;
-      text-decoration: none;
+    }
+    .download-button-image {
+      display: inline-block;
+      transition: transform 0.3s ease, filter 0.3s ease;
       border-radius: 8px;
-      font-weight: 600;
-      transition: transform 0.3s ease, background 0.3s ease;
+      overflow: hidden;
     }
-    .support-button {
-      background: #ff813f;
+    .download-button-image:hover {
+      transform: translateY(-3px) scale(1.05);
+      filter: brightness(1.1);
     }
-    .download-button:hover {
-      transform: translateY(-3px);
-      background: var(--secondary-color);
-    }
-    .support-button:hover {
-      background: #ff6b1f;
+    .download-button-image img {
+      height: 60px;
+      width: auto;
+      display: block;
     }
     .button-icon {
       margin-right: 10px;
       font-size: 1.2em;
     }
+    
     
     /* Enhanced content styles */
     .benefits-section {
@@ -386,6 +382,20 @@
       font-weight: 600;
       margin-bottom: 5px;
     }
+    
+    /* Responsive design for download buttons */
+    @media (max-width: 768px) {
+      .download-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+      
+      .download-button-image img {
+        height: 50px;
+      }
+    }
+    
   </style>
   <!-- AdSense Code -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6181842049927319"
@@ -399,21 +409,27 @@
       <p>Your Multi-Utility Android App</p>
     </div>
     
-    <!-- Download section -->
-    <div class="download-section">
-      <h2>Download & Support</h2>
-      <p>Get Xplore now and support our development!</p>
-      <div class="download-buttons">
-        <a href="https://play.google.com/store/apps/details?id=sbs.xplore.test3&pcampaignid=web_share" class="download-button" target="_blank">
-          <span class="button-icon">🤖</span>
-          Download on Google Play
-        </a>
-        <a href="https://buymeacoffee.com/dipaksumiti" class="download-button support-button" target="_blank">
-          <span class="button-icon">☕</span>
-          Support on Buy Me a Coffee
-        </a>
+     <!-- Download section -->
+<div class="download-section">
+  <h2>Download & Support</h2>
+  <p>Get Xplore now and support our development!</p>
+  <div class="download-buttons">
+    <a href="https://play.google.com/store/apps/details?id=sbs.xplore.test3&pcampaignid=web_share" class="download-button-image" target="_blank" rel="noopener">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+           alt="Get it on Google Play" 
+           loading="lazy"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';" />
+      <div style="display:none; background:#000; color:#fff; padding:12px 24px; border-radius:8px; font-family:Arial; font-size:14px; text-align:center; width:196px; height:58px; line-height:34px; box-sizing:border-box;">
+        📱 Get it on<br><strong>Google Play</strong>
       </div>
-    </div>
+    </a>
+    <a href="https://buymeacoffee.com/dipaksumiti" class="download-button-image" target="_blank" rel="noopener">
+      <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
+           alt="Buy Me A Coffee" 
+           loading="lazy" />
+    </a>
+  </div>
+</div>
    
     <!-- Nav section -->
     <nav>
